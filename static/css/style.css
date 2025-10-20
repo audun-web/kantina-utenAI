@@ -22,6 +22,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
+    font-family: 'Jetbrains Mono', monospace;
 }
 
 nav ul li a:hover {
