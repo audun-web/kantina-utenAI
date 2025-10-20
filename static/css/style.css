@@ -29,10 +29,13 @@ nav ul li a {
     transition: color 0.3s ease;
     font-family: 'Jetbrains Mono', monospace;
     font-size: 18px;
+    display: inline-block;;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 nav ul li a:hover {
     color: #BD000C;
+    transform: scale(1.1); /* Gjør lenken 10% større */
 }
 
 main {
@@ -59,4 +62,24 @@ footer p {
     font-size: 2.5em; /* Gjør teksten større */
     letter-spacing: 2px; /* Gir litt luft mellom bokstavene */
     text-shadow: 1px 1px 0 #BD000C; /* 3D-effekt med to skygger */
+}
+
+.informasjons-boks {
+    font-family: 'Jetbrains Mono', monospace;
+    margin: 10px;
+    text-align: center;
+}
+
+.informasjons-boks a {
+    color: #BD000C;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    font-style: italic;
+    display: inline-block; /* Nødvendig for at transform skal fungere korrekt */
+}
+
+.informasjons-boks a:hover {
+    color: #3B4F54;
+    transform: scale(1.1); /* Gjør lenken 10% større */
 }
