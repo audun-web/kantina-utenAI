@@ -29,3 +29,16 @@ nav ul li a {
 nav ul li a:hover {
     color: #BD000C;
 }
+
+footer {
+    background-color: #222A2B;
+    border-radius: 10px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    
+}
+
+footer p {
+    font-family: 'Jetbrains Mono', monospace;
+}
