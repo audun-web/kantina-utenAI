@@ -4,7 +4,7 @@ body {
 
 nav {
     display: flex;
-    background-color: #356369;
+    background-color: #222A2B;
     border-radius: 10px;
     padding: 5px;
 }
@@ -23,8 +23,9 @@ nav ul li a {
     color: white;
     transition: color 0.3s ease;
     font-family: 'Jetbrains Mono', monospace;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
-    color: orange;
+    color: #BD000C;
 }
