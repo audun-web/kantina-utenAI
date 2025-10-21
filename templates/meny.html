@@ -3,4 +3,9 @@
 {% block title %}Kantine Meny{% endblock %}
 
 {% block content %}
+{% for meny in menyliste %}
+<p>{{ meny.dag }}</p>
+<p>{{ meny.rett }}</p>
+<p>{{ meny.allergener }}</p>
+{% endfor %}
 {% endblock %}

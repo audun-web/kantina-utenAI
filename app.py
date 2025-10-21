@@ -8,7 +8,14 @@ def index():
 
 @app.route('/meny')
 def meny():
-    return render_template('meny.html')
+    menyliste = [
+        {"dag": "Mandag", "rett": "Stekt Ludvig", "allergener": "Gul Caps"},
+        {"dag": "Tirsdag", "rett": "Stekt Ebbe", "allergener": "Discord"},
+        {"dag": "Onsdag", "rett": "Stekt Niko", "allergener": "Kattehår"},
+        {"dag": "Torsdag", "rett": "Stekt Lis", "allergener": "Egg"},
+        {"dag": "Fredag", "rett": "Taco", "allergener": "Mexikanere"}
+    ]
+    return render_template('meny.html', menyliste=menyliste)
 
 @app.route('/varer')
 def varer():
