@@ -19,6 +19,13 @@ def meny():
 
 @app.route('/varer')
 def varer():
+    vareliste = [
+        {"navn": "Monster", "pris": "30kr", "bilde": "monster.png"},
+        {"navn": "Pepsi", "pris": "15kr", "bilde": "pepsi.png"},
+        {"navn": "Sandwich", "pris": "15kr", "bilde": "sandwich.png"},
+        {"navn": "ProteinShake", "pris": "15kr", "bilde": "proteinshake.png"},
+        {"navn": "Kaffe", "pris": "25kr", "bilde": "kaffe.png"}
+    ]
     return render_template('varer.html')
 
 @app.route('/kontakt')
