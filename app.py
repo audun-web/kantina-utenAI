@@ -26,7 +26,7 @@ def varer():
         {"navn": "ProteinShake", "pris": "15kr", "bilde": "proteinshake.png"},
         {"navn": "Kaffe", "pris": "25kr", "bilde": "kaffe.png"}
     ]
-    return render_template('varer.html')
+    return render_template('varer.html', vareliste=vareliste)
 
 @app.route('/kontakt')
 def kontakt():

@@ -3,4 +3,17 @@
 {% block title %}Kantina's Faste varer{% endblock %}
 
 {% block content %}
+
+<h1 class="tittel">Faste Varer</h1>
+<div class="meny-container">
+{% for vare in vareliste %}
+    <div class="meny-kort">
+        <h3>{{ vare.navn }}</h3>
+        <p class="rett">{{ vare.pris }}</p>
+        <img src="{{ url_for('static', filename='img/' ~ vare.bilde) }}" class="bildealt">
+        
+    </div>
+{% endfor %}
+</div>
+
 {% endblock %}
