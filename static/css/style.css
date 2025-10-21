@@ -12,6 +12,7 @@ nav {
     border-radius: 10px;
     padding: 5px;
     margin: 10px;
+    align-items: center; /* Vertically aligns the title and links */
 }
 
 nav ul {
@@ -36,6 +37,16 @@ nav ul li a {
 nav ul li a:hover {
     color: #BD000C;
     transform: scale(1.1); /* Gjør lenken 10% større */
+}
+
+.kantine-tittel {
+    text-align: center;
+    font-family: 'Jetbrains Mono', monospace;
+    color: #BD000C;
+    margin-left: 20px;
+    padding-right: 20px; /* Adds space between the title and the new bar */
+    margin-right: 10px; /* Adds space between the bar and the nav links */
+    border-right: 2px solid #555; /* Creates the vertical bar */
 }
 
 main {
@@ -109,6 +120,7 @@ footer p {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     font-family: 'Jetbrains Mono', monospace;
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .meny-kort h3 {
