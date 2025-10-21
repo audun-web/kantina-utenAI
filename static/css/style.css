@@ -83,3 +83,12 @@ footer p {
     color: #3B4F54;
     transform: scale(1.1); /* Gjør lenken 10% større */
 }
+
+.bildealt {
+    width: 70%;
+    height: auto;
+    display: block; /* Ensures it behaves like a block element for margin: auto */
+    margin: 20px auto; /* Centers the image horizontally and adds some vertical spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
