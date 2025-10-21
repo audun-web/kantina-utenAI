@@ -92,3 +92,30 @@ footer p {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
+
+/* Stil for meny-siden */
+.meny-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Lager 2 kolonner med lik bredde */
+    gap: 20px; /* Avstand mellom kortene */
+    padding: 20px;
+}
+
+.meny-kort {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Jetbrains Mono', monospace;
+}
+
+.meny-kort h3 {
+    margin-top: 0;
+    color: #BD000C;
+}
+
+.meny-kort .allergener {
+    font-size: 0.9em;
+    color: #555;
+}

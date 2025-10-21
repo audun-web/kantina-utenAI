@@ -3,9 +3,14 @@
 {% block title %}Kantine Meny{% endblock %}
 
 {% block content %}
+<h1 class="tittel">Ukens Meny</h1>
+<div class="meny-container">
 {% for meny in menyliste %}
-<p>{{ meny.dag }}</p>
-<p>{{ meny.rett }}</p>
-<p>{{ meny.allergener }}</p>
+    <div class="meny-kort">
+        <h3>{{ meny.dag }}</h3>
+        <p class="rett">{{ meny.rett }}</p>
+        <p class="allergener"><strong>Allergener:</strong> {{ meny.allergener }}</p>
+    </div>
 {% endfor %}
+</div>
 {% endblock %}
