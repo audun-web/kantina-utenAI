@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -15,7 +16,9 @@ def meny():
         {"dag": "Torsdag", "rett": "Stekt Ris", "allergener": "Ris", "pris": "20kr", "bilde": "stekt-ris.png"},
         {"dag": "Fredag", "rett": "Taco", "allergener": "Mexikanere", "pris": "25kr", "bilde": "taco.png"}
     ]
-    return render_template('meny.html', menyliste=menyliste)
+    # Henter dagens ukedag som et tall (Mandag=0, Tirsdag=1, etc.)
+    today_index = datetime.now().weekday()
+    return render_template('meny.html', menyliste=menyliste, today=today_index)
 
 @app.route('/varer')
 def varer():

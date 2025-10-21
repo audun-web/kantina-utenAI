@@ -6,7 +6,8 @@
 <h1 class="tittel">Ukens Meny</h1>
 <div class="meny-container">
 {% for meny in menyliste %}
-    <div class="meny-kort">
+    {# Legger til klassen 'dagens-rett' hvis loop-indeksen matcher dagens indeks #}
+    <div class="meny-kort {% if loop.index0 == today %}dagens-rett{% endif %}">
         <h3>{{ meny.dag }}</h3>
         <p class="rett">{{ meny.rett }}</p>
         <p class="allergener"><strong>Allergener:</strong> {{ meny.allergener }}</p>

@@ -137,6 +137,12 @@ footer p {
     transform: scale(1.02);
 }
 
+/* Stil for å fremheve dagens rett */
+.dagens-rett {
+    border: 3px solid #BD000C;
+    box-shadow: 0 4px 15px rgba(189, 0, 12, 0.3);
+}
+
 .kontakt-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -169,4 +175,3 @@ footer p {
     border-radius: 10px; /* Gjør bildet helt sirkulært */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* En mykere skygge */
 }
-
