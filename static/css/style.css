@@ -155,11 +155,12 @@ footer p {
 }
 
 .kontakt-bilde {
-    width: 40%;
-    height: auto;
+    width: 100px; /* Setter en fast bredde */
+    height: 130px; /* Setter en fast høyde for å lage en sirkel */
+    object-fit: cover; /* Sørger for at bildet fyller rammen uten å strekkes */
     display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    margin: 0 auto 15px; /* Sentrerer og gir litt luft under bildet */
+    border-radius: 10px; /* Gjør bildet helt sirkulært */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* En mykere skygge */
 }
 
