@@ -9,10 +9,10 @@ def index():
 @app.route('/meny')
 def meny():
     menyliste = [
-        {"dag": "Mandag", "rett": "Stekt Ludvig", "allergener": "Gul Caps"},
-        {"dag": "Tirsdag", "rett": "Stekt Ebbe", "allergener": "Discord"},
-        {"dag": "Onsdag", "rett": "Stekt Niko", "allergener": "Kattehår"},
-        {"dag": "Torsdag", "rett": "Stekt Lis", "allergener": "Egg"},
+        {"dag": "Mandag", "rett": "Pizza", "allergener": "Gluten"},
+        {"dag": "Tirsdag", "rett": "Fried Chicken", "allergener": "Melk"},
+        {"dag": "Onsdag", "rett": "Stekt Laks med Poteter", "allergener": "Talerken"},
+        {"dag": "Torsdag", "rett": "Stekt Ris", "allergener": "Ris"},
         {"dag": "Fredag", "rett": "Taco", "allergener": "Mexikanere"}
     ]
     return render_template('meny.html', menyliste=menyliste)

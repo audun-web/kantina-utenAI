@@ -108,6 +108,7 @@ footer p {
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     font-family: 'Jetbrains Mono', monospace;
+    transition: transform 0.3s ease;
 }
 
 .meny-kort h3 {
@@ -118,4 +119,8 @@ footer p {
 .meny-kort .allergener {
     font-size: 0.9em;
     color: #555;
+}
+
+.meny-kort:hover {
+    transform: scale(1.02);
 }
