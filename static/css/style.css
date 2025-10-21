@@ -152,6 +152,12 @@ footer p {
     transition: transform 0.3s ease;
     text-align: center;
     margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.kontakt-kort:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 5px rgba(100,0,0,1);
 }
 
 .kontakt-bilde {
