@@ -9,11 +9,11 @@ def index():
 @app.route('/meny')
 def meny():
     menyliste = [
-        {"dag": "Mandag", "rett": "Pizza", "allergener": "Gluten", "pris": "20kr"},
-        {"dag": "Tirsdag", "rett": "Fried Chicken", "allergener": "Melk", "pris": "25kr"},
-        {"dag": "Onsdag", "rett": "Stekt Laks med Poteter", "allergener": "Talerken", "pris": "30kr"},
-        {"dag": "Torsdag", "rett": "Stekt Ris", "allergener": "Ris", "pris": "20kr"},
-        {"dag": "Fredag", "rett": "Taco", "allergener": "Mexikanere", "pris": "25kr"}
+        {"dag": "Mandag", "rett": "Pizza", "allergener": "Gluten", "pris": "20kr", "bilde": "pizza.avif"},
+        {"dag": "Tirsdag", "rett": "Fried Chicken", "allergener": "Melk", "pris": "25kr", "bilde": "fried-chicken.jpg"},
+        {"dag": "Onsdag", "rett": "Stekt Laks med Poteter", "allergener": "Talerken", "pris": "30kr", "bilde": "stekt-laks.png"},
+        {"dag": "Torsdag", "rett": "Stekt Ris", "allergener": "Ris", "pris": "20kr", "bilde": "stekt-ris.png"},
+        {"dag": "Fredag", "rett": "Taco", "allergener": "Mexikanere", "pris": "25kr", "bilde": "taco.png"}
     ]
     return render_template('meny.html', menyliste=menyliste)
 
