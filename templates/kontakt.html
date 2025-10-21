@@ -11,7 +11,7 @@
         <h3>{{ kontakt.navn }}</h3>
         <p class="rett">{{ kontakt.stilling }}</p>
         <p class="allergener"><strong>Telefon:</strong> {{ kontakt.tlf }}</p>
-        <img src="{{ url_for('static', filename='img/' ~ kontakt.bilde) }}" class="bildealt">
+        <img src="{{ url_for('static', filename='img/' ~ kontakt.bilde) }}" class="kontakt-bilde">
         
     </div>
 {% endfor %}

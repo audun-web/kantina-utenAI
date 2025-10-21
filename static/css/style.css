@@ -139,7 +139,7 @@ footer p {
 
 .kontakt-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .kontakt-kort {
@@ -153,3 +153,13 @@ footer p {
     text-align: center;
     margin: 20px;
 }
+
+.kontakt-bilde {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
