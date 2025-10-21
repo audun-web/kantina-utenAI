@@ -30,7 +30,13 @@ def varer():
 
 @app.route('/kontakt')
 def kontakt():
-    return render_template('kontakt.html')
+    kontaktliste = [
+        {"navn": "Audun Midtgård Meckelborg", "stilling": "CEO", "tlf": "+47 123 45 678", "bilde": "audun.png"},
+        {"navn": "Ebbe Gaston Zelow", "stilling": "Salgsperson", "tlf": "+47 123 45 678", "bilde": "ebbe.png"},
+        {"navn": "Ludvig Meland Egeberg", "stilling": "Kokk", "tlf": "+47 123 45 678", "bilde": "ludvig.png"},
+        {"navn": "Nikolai Hauke Westergaard", "stilling": "Vaskedame", "tlf": "+47 123 45 678", "bilde": "nikolai.png"}
+    ]
+    return render_template('kontakt.html', kontaktliste=kontaktliste)
 
 if __name__ == '__main__':
     app.run(debug=True)
