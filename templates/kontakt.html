@@ -8,7 +8,7 @@
 <div class="kontakt-container">
 {% for kontakt in kontaktliste %}
     <div class="kontakt-kort">
-        <h3>{{ kontakt.navn }}</h3>
+        <h3 class="rett">{{ kontakt.navn }}</h3>
         <p class="rett">{{ kontakt.stilling }}</p>
         <p class="allergener"><strong>Telefon:</strong> {{ kontakt.tlf }}</p>
         <img src="{{ url_for('static', filename='img/' ~ kontakt.bilde) }}" class="kontakt-bilde">

@@ -31,6 +31,7 @@ nav ul li a {
     font-family: 'Jetbrains Mono', monospace;
     font-size: 18px;
     display: inline-block;;
+    display: inline-block;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
@@ -83,7 +84,7 @@ footer p {
 
 .informasjons-boks a {
     color: #BD000C;
-    text-decoration: none;
+    text-decoration: underline;
     transition: color 0.3s ease, transform 0.2s ease;
     font-weight: bold;
     font-style: italic;
@@ -165,6 +166,11 @@ footer p {
     transform: scale(1.02);
     box-shadow: 0 2px 5px rgba(100,0,0,1);
 }
+ .kontakt-kort h3 {
+    margin-top: 0;
+    color: #BD000C;
+}
+
 
 .kontakt-bilde {
     width: 100px; /* Setter en fast bredde */
