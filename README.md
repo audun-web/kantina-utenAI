@@ -57,6 +57,6 @@ Følg disse stegene for å kjøre prosjektet lokalt.
     Naviger til `http://127.0.0.1:5000` i nettleseren din.
 
 ## Kilder
-Nikolai Hauke Westergaard
+Nikolai Hauke Westergaard for å skrive lister i python filen
 
 ChatGPT for datetime hjelp
